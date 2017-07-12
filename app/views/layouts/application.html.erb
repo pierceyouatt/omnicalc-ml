@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Omnicalc ML</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+
+  <!-- Connect to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Connect to Font Awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Connect to Bootstrap Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <%= javascript_include_tag 'application' %>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Omnicalc ML</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/text-tag">Text Tagger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/image-tag">Image Tagger</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/colorize">Colorizer</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container pt-4">
+    <div class="col">
+      <%= yield %>
+    </div>
+  </div>
+
+  <div class="rails-toolbar">
+    <a href="/git" target="_blank" class="rails-toolbar-button">
+      Git
+    </a>
+  </div>
+</body>
+</html>
