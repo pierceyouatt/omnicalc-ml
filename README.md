@@ -9,6 +9,17 @@ You'll get practice using forms to capture and process user input using some int
 
 ### [Here is the target you will ultimately build.](https://omnicalc-ml-target.herokuapp.com/)
 
+**Note: You may see unusual warning messages like the following lines when you run `rails grade`.**
+```
+/home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:29: warning: already initialized constant Algorithmia
+/usr/local/rvm/gems/ruby-2.4.3/gems/algorithmia-1.0.1/lib/algorithmia/algorithm.rb:1: warning: previous definition of Algorithmia was here
+/home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:66: warning: already initialized constant Algorithmia
+/home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:29: warning: previous definition of Algorithmia was here
+/home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:102: warning: already initialized constant Algorithmia
+/home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:66: warning: previous definition of Algorithmia was here
+```
+** You can safely ignore these messages. **
+
 ## Project Specific Setup
 
  1. Ensure that you've forked this repo to your own GitHub account.
