@@ -3,13 +3,15 @@
 For this assignment, we're going to be extending your work with Omnicalc by exploring a machine learning API marketplace called [Algorithmia](https://algorithmia.com/). It's a fantastic resource that connects us to a large number of machine learning APIs, including many that do text and image analysis.
 
 You'll get practice using forms to capture and process user input using some interesting applications including:
-- a service that auto-tags large blocks of text
-- a service that colorizes black and white images
-- a service that auto-tags images with descriptive keywords
+
+ - a service that auto-tags large blocks of text
+ - a service that colorizes black and white images
+ - a service that auto-tags images with descriptive keywords
 
 ### [Here is the target you will ultimately build.](https://omnicalc-ml-target.herokuapp.com/)
 
 **Note: You may see unusual warning messages like the following lines when you run `rails grade`.**
+
 ```
 /home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:29: warning: already initialized constant Algorithmia
 /usr/local/rvm/gems/ruby-2.4.3/gems/algorithmia-1.0.1/lib/algorithmia/algorithm.rb:1: warning: previous definition of Algorithmia was here
@@ -18,17 +20,18 @@ You'll get practice using forms to capture and process user input using some int
 /home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:102: warning: already initialized constant Algorithmia
 /home/ubuntu/workspace/omnicalc-ml/spec/features/algorithmia_spec.rb:66: warning: previous definition of Algorithmia was here
 ```
-** You can safely ignore these messages. **
+
+**You can safely ignore these messages.**
 
 ## Project Specific Setup
 
- 1. Ensure that you've forked this repo to your own GitHub account.
- 1. Set up [a Cloud9 workspace as usual](https://guides.firstdraft.com/getting-started-with-cloud-9.html) based on this repo.
+ 1. Clone this project to your Cloud9 workspace as usual.
+ 1. `cd omnicalc-ml`
  1. `bin/setup`
- 1. Run Project
- 1. Navigate to the live app in Chrome — there's nothing there but the default Rails welcome screen!
- 1. **This is a brand new, untouched Rails application.** All we've done is add the instructions you're reading in this README. **You could generate the exact same thing right now.** On Cloud9, all you do is click "Create a new workspace" and then choose Ruby on Rails.
- 1. As you work, use the [Continuous Integration workflow](https://guides.firstdraft.com/continuous-integration.html) to save and submit.
+ 1. `bin/server`
+ 1. Navigate to the Preview of the running application in Chrome — there's nothing there but the default Rails welcome screen.
+ 1. **This is a brand new, untouched Rails application.** All we've done is add the instructions you're reading in this README. **You could generate the exact same thing right now.**
+ 1. As you work, `rails grade:all` in a separate tab for feedback.
 
 ### API Setup
 
