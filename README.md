@@ -57,6 +57,8 @@ and we should see output of
 "replace_me_with_your_key"
 ```
 
+Next, restart your Rails server so that it picks up this information. Find the Terminal tab where you did `bin/server`, <kbd>Ctrl</kbd>+<kbd>C</kbd> to shut it down, and `bin/server` again to restart it.
+
 You can use this pattern throughout your Rails app to pull up any sensitive info. Practice by using the `.env` file to store your actual Algorithmia API key.
 
 ### Problem 1 - Auto-tag Text
