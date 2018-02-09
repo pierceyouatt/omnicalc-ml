@@ -1,3 +1,7 @@
 <body>
-<%= @results %>
+<ul>
+<% @results.each do |item| %>
+<li><%= item %></li>
+<% end %>
+</ul>
 </body>
