@@ -9,4 +9,15 @@ class TexttagController < ApplicationController
     @results = algo.pipe(@input).result
     render("/text-tag/results.html.erb")
   end
+  def colorize
+    render("/colorize/colorize.html.erb")
+  end
+  def colorize_results
+    @input = params.fetch("user_url")
+    input = {image: @input}
+    client = Algorithmia.client(ENV['ALGORITHMIA_KEY'])
+    algo = client.algo('deeplearning/ColorfulImageColorization/1.1.7')
+    @results = algo.pipe(input).result
+    render("/colorize/results.html.erb")
+  end
 end
