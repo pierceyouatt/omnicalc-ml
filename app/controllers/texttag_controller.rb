@@ -18,7 +18,7 @@ class TexttagController < ApplicationController
     client = Algorithmia.client(ENV['ALGORITHMIA_KEY'])
     algo = client.algo('deeplearning/ColorfulImageColorization/1.1.7')
     @results = algo.pipe(input).result
-    result_output = @result['output']
+    result_output = @results['output']
     algorithmia_path = result_output.split("data://")[1]
     @original_image_url = params[:image_url]
     @colorized_image_url = "https://algorithmia.com/v1/data/#{algorithmia_path}"
