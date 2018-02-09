@@ -32,7 +32,7 @@ class TexttagController < ApplicationController
     input = {image: @input}
     client = Algorithmia.client(ENV['ALGORITHMIA_KEY'])
     algo = client.algo('deeplearning/IllustrationTagger/0.4.0')
-    @results = algo.pipe(input).result
+    @results = algo.pipe(input).result.dig("general")
     render("/imagetag/results.html.erb")   
   end
 end

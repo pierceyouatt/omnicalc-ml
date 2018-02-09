@@ -1,14 +1,14 @@
 example_id                                | status | run_time        |
 ----------------------------------------- | ------ | --------------- |
-./spec/features/algorithmia_spec.rb[1:1]  | passed | 0.32644 seconds |
-./spec/features/algorithmia_spec.rb[2:1]  | passed | 0.01218 seconds |
-./spec/features/algorithmia_spec.rb[3:1]  | passed | 0.01262 seconds |
-./spec/features/algorithmia_spec.rb[4:1]  | passed | 0.03837 seconds |
-./spec/features/algorithmia_spec.rb[5:1]  | passed | 0.01335 seconds |
-./spec/features/algorithmia_spec.rb[6:1]  | passed | 0.01158 seconds |
-./spec/features/algorithmia_spec.rb[7:1]  | passed | 0.01204 seconds |
-./spec/features/algorithmia_spec.rb[8:1]  | passed | 0.02625 seconds |
-./spec/features/algorithmia_spec.rb[9:1]  | failed | 0.00205 seconds |
-./spec/features/algorithmia_spec.rb[10:1] | failed | 0.00173 seconds |
-./spec/features/algorithmia_spec.rb[11:1] | failed | 0.00168 seconds |
-./spec/features/algorithmia_spec.rb[12:1] | failed | 0.00241 seconds |
+./spec/features/algorithmia_spec.rb[1:1]  | passed | 0.24817 seconds |
+./spec/features/algorithmia_spec.rb[2:1]  | passed | 0.01188 seconds |
+./spec/features/algorithmia_spec.rb[3:1]  | passed | 0.01247 seconds |
+./spec/features/algorithmia_spec.rb[4:1]  | passed | 0.04894 seconds |
+./spec/features/algorithmia_spec.rb[5:1]  | passed | 0.01925 seconds |
+./spec/features/algorithmia_spec.rb[6:1]  | passed | 0.01683 seconds |
+./spec/features/algorithmia_spec.rb[7:1]  | passed | 0.01253 seconds |
+./spec/features/algorithmia_spec.rb[8:1]  | passed | 0.02977 seconds |
+./spec/features/algorithmia_spec.rb[9:1]  | passed | 0.02527 seconds |
+./spec/features/algorithmia_spec.rb[10:1] | passed | 0.01748 seconds |
+./spec/features/algorithmia_spec.rb[11:1] | passed | 0.01408 seconds |
+./spec/features/algorithmia_spec.rb[12:1] | passed | 0.06841 seconds |
