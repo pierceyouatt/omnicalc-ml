@@ -24,4 +24,15 @@ class TexttagController < ApplicationController
     @colorized_image_url = "https://algorithmia.com/v1/data/#{algorithmia_path}"
     render("/colorize/results.html.erb")
   end
+  def imagetag
+    render("/imagetag/imagetag.html.erb")
+  end
+  def imagetag_results
+    @input = params.fetch("user_url")
+    input = {image: @input}
+    client = Algorithmia.client(ENV['ALGORITHMIA_KEY'])
+    algo = client.algo('deeplearning/IllustrationTagger/0.4.0')
+    @results = algo.pipe(input).result
+    render("/imagetag/results.html.erb")   
+  end
 end

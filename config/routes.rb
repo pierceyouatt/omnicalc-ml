@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get("/text-tag/results", {:controller => "texttag", :action => "autotag_results"})
   get("/colorize", {:controller => "texttag", :action => "colorize"})
   get("/colorize/results", {:controller => "texttag", :action => "colorize_results"})
+  get("/image-tag", {:controller => "texttag", :action => "imagetag"})
+  get("/image-tag/results", {:controller => "texttag", :action => "imagetag_results"})
 end
